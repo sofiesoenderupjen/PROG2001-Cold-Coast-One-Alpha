@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using UnityEngine;
 
-public class HumanManager : MonoBehaviour
+public class SofiesHumanManager : MonoBehaviour
 {
     public GameObject human;
     public float value;
