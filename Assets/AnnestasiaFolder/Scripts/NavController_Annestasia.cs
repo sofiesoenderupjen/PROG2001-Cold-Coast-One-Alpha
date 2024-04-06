@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class NavController : MonoBehaviour
+public class NavController_Annestasia : MonoBehaviour
 {
     public void LoadScene(string sceneName)
     {
