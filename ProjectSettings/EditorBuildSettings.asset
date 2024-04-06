@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/AnnestasiaFolder/Scenes/CastleScene.unity
     guid: 720cba4ab71b03048a4729c0ea8dcf6d
+  - enabled: 1
+    path: Assets/IdaFolder/Scenes/BeachScene.unity
+    guid: ac17582456b75574e8948c39248dedf1
   m_configObjects: {}
