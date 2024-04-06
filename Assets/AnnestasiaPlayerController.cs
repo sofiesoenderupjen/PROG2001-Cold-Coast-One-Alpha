@@ -10,11 +10,13 @@ public class AnnestasiaPlayerController : MonoBehaviour
     private float mX;
     private float mY;
     public float speed = 0;
+    private int count;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        count = 0;
 
     }
 
@@ -31,5 +33,14 @@ public class AnnestasiaPlayerController : MonoBehaviour
 
         mX = moveV.x;
         mY = moveV.y;
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("PickUp"))
+        {
+            other.gameObject.SetActive(false);
+            count = count + 1;
+        }
     }
 }
