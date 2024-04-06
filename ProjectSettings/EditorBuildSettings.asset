@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MarianneFolder/Scenes/Mariannes Scene.unity
     guid: d667d983743cbf94b8db75c8770e84f6
+  - enabled: 1
+    path: Assets/AnnestasiaFolder/Scenes/CastleScene.unity
+    guid: 720cba4ab71b03048a4729c0ea8dcf6d
   m_configObjects: {}
