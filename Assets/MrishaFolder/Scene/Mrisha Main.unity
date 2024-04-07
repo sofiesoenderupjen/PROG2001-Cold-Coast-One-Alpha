@@ -544,10 +544,10 @@ Transform:
   - {fileID: 1243487085}
   - {fileID: 1145523145}
   - {fileID: 543450652200457483}
-  - {fileID: 543450652463421847}
-  - {fileID: 543450653105767013}
-  - {fileID: 543450652723934015}
   - {fileID: 543450653435721537}
+  - {fileID: 543450652463421847}
+  - {fileID: 543450652723934015}
+  - {fileID: 543450653105767013}
   - {fileID: 1138399546}
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -1292,7 +1292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5232067236690362670, guid: 6accce3c3b8897943aac8c9a46c0e36d, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.62012
+      value: 0.7478027
       objectReference: {fileID: 0}
     - target: {fileID: 5232067236690362670, guid: 6accce3c3b8897943aac8c9a46c0e36d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1304,7 +1304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5232067236690362670, guid: 6accce3c3b8897943aac8c9a46c0e36d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.59
+      value: 12.53
       objectReference: {fileID: 0}
     - target: {fileID: 5232067236690362670, guid: 6accce3c3b8897943aac8c9a46c0e36d, type: 3}
       propertyPath: m_LocalRotation.w
