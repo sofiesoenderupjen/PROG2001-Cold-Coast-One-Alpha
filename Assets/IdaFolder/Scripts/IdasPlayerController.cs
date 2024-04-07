@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class IdasPlayerController : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class IdasPlayerController : MonoBehaviour
     // Movement along X and Y axes.
     private float movementX;
     private float movementY;
+    private int count;
+    public TextMeshProUGUI countText;
 
     // Speed at which the player moves.
     public float speed = 10;
@@ -21,6 +24,9 @@ public class IdasPlayerController : MonoBehaviour
     {
         // Get and store the Rigidbody component attached to the player.
         rb = GetComponent<Rigidbody>();
+        count = 0;
+
+        SetCountText();
     }
 
     // This function is called when a move input is detected.
@@ -34,6 +40,10 @@ public class IdasPlayerController : MonoBehaviour
         movementY = movementVector.y;
     }
 
+    void SetCountText()
+    {
+        countText.text = "Count: " + count.ToString();
+    }
     // FixedUpdate is called once per fixed frame-rate frame.
     private void FixedUpdate()
     {
@@ -49,6 +59,8 @@ public class IdasPlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("PickUp"))
         {
             other.gameObject.SetActive(false);
+            count = count + 1;
+            SetCountText();
         }
     }
 }
