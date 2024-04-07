@@ -18,6 +18,7 @@ public class AnneSofiePlayerController : MonoBehaviour
  // Speed at which the player moves.
  public float speed = 10; 
  public TextMeshProUGUI countText;
+ public GameObject winTextObject;
 
  // Start is called before the first frame update.
  void Start()
@@ -26,6 +27,7 @@ public class AnneSofiePlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         count = 0; 
         SetCountText();
+        winTextObject.SetActive(false);
     }
  
  // This function is called when a move input is detected.
@@ -42,6 +44,10 @@ public class AnneSofiePlayerController : MonoBehaviour
  void SetCountText() 
    {
        countText.text =  "Count: " + count.ToString()+"/6";
+       if (count >= 6)
+       {
+           winTextObject.SetActive(true);
+       }
    }
 
  // FixedUpdate is called once per fixed frame-rate frame.
