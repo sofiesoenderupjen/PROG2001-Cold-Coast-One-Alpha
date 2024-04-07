@@ -19,6 +19,7 @@ public class AnneSofiePlayerController : MonoBehaviour
  public float speed = 10; 
  public TextMeshProUGUI countText;
  public GameObject winTextObject;
+ public AudioSource audioPlayer;
 
  // Start is called before the first frame update.
  void Start()
@@ -63,6 +64,7 @@ public class AnneSofiePlayerController : MonoBehaviour
    {
        if (other.gameObject.CompareTag("PickUp")) 
        {
+           audioPlayer.Play();
            other.gameObject.SetActive(false);
            count = count + 1;
            SetCountText();

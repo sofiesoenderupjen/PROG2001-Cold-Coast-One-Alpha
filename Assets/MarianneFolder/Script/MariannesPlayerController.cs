@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class MariannesPlayerController : MonoBehaviour
 {
     // Rigidbody of the player.
     private Rigidbody rb;
+    private int count;
 
     // Movement along X and Y axes.
     private float movementX;
@@ -15,12 +17,18 @@ public class MariannesPlayerController : MonoBehaviour
 
     // Speed at which the player moves.
     public float speed = 10;
+    public TextMeshProUGUI countText;
+    public GameObject winTextObject;
 
     // Start is called before the first frame update.
     void Start()
     {
         // Get and store the Rigidbody component attached to the player.
         rb = GetComponent<Rigidbody>();
+        count = 0;
+
+        SetCountText();
+        winTextObject.SetActive(false);
     }
 
     // This function is called when a move input is detected.
@@ -33,6 +41,16 @@ public class MariannesPlayerController : MonoBehaviour
         movementX = movementVector.x;
         movementY = movementVector.y;
     }
+
+    void SetCountText()
+    {
+        countText.text = "Count: " + count.ToString();
+        if(count>=10)
+        {
+            winTextObject.SetActive(true);
+        }
+    }
+
     // FixedUpdate is called once per fixed frame-rate frame.
     private void FixedUpdate()
     {
@@ -45,6 +63,12 @@ public class MariannesPlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        other.gameObject.SetActive(false);
+        if(other.gameObject.CompareTag("MariannesPickUp"))
+        {
+            other.gameObject.SetActive(false);
+            count = count + 1;
+
+            SetCountText();
+        }
     }
 }
