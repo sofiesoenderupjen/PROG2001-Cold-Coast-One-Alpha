@@ -69,11 +69,21 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+<<<<<<< HEAD
     "com.unity.mathematics": {
       "version": "1.2.6",
       "depth": 1,
       "source": "registry",
       "dependencies": {},
+=======
+    "com.unity.inputsystem": {
+      "version": "1.4.4",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.uielements": "1.0.0"
+      },
+>>>>>>> af9d13f1468db0b28b8ba8b4bf033ac0b1123635
       "url": "https://packages.unity.com"
     },
     "com.unity.performance.profile-analyzer": {
