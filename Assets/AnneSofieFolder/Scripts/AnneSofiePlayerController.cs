@@ -4,11 +4,12 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
+using TMPro;
 public class AnneSofiePlayerController : MonoBehaviour
 {
  // Rigidbody of the player.
  private Rigidbody rb; 
+ private int count;
 
  // Movement along X and Y axes.
  private float movementX;
@@ -16,12 +17,15 @@ public class AnneSofiePlayerController : MonoBehaviour
 
  // Speed at which the player moves.
  public float speed = 10; 
+ public TextMeshProUGUI countText;
 
  // Start is called before the first frame update.
  void Start()
     {
  // Get and store the Rigidbody component attached to the player.
         rb = GetComponent<Rigidbody>();
+        count = 0; 
+        SetCountText();
     }
  
  // This function is called when a move input is detected.
@@ -35,6 +39,11 @@ public class AnneSofiePlayerController : MonoBehaviour
         movementY = movementVector.y; 
     }
 
+ void SetCountText() 
+   {
+       countText.text =  "Count: " + count.ToString()+"/6";
+   }
+
  // FixedUpdate is called once per fixed frame-rate frame.
  private void FixedUpdate() 
     {
@@ -44,5 +53,15 @@ public class AnneSofiePlayerController : MonoBehaviour
  // Apply force to the Rigidbody to move the player.
         rb.AddForce(movement * speed); 
     }
+    private void OnTriggerEnter(Collider other) 
+   {
+       if (other.gameObject.CompareTag("PickUp")) 
+       {
+           other.gameObject.SetActive(false);
+           count = count + 1;
+           SetCountText();
+       }
+       
+   }
 }
 
