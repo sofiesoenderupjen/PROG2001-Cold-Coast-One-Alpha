@@ -20,6 +20,8 @@ public class MariannesPlayerController : MonoBehaviour
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
 
+    public AudioSource audioPlayer;
+
     // Start is called before the first frame update.
     void Start()
     {
@@ -69,6 +71,14 @@ public class MariannesPlayerController : MonoBehaviour
             count = count + 1;
 
             SetCountText();
+        }
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "MariannesPickUp")
+        {
+            audioPlayer.Play();
         }
     }
 }
