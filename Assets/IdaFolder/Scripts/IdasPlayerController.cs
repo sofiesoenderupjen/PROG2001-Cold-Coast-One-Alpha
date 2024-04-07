@@ -15,6 +15,7 @@ public class IdasPlayerController : MonoBehaviour
     private float movementY;
     private int count;
     public TextMeshProUGUI countText;
+    public GameObject winTextObject;
 
     // Speed at which the player moves.
     public float speed = 10;
@@ -27,6 +28,7 @@ public class IdasPlayerController : MonoBehaviour
         count = 0;
 
         SetCountText();
+        winTextObject.SetActive(false);
     }
 
     // This function is called when a move input is detected.
@@ -43,6 +45,10 @@ public class IdasPlayerController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
+        if (count >= 12)
+        {
+            winTextObject.SetActive(true);
+        }
     }
     // FixedUpdate is called once per fixed frame-rate frame.
     private void FixedUpdate()
