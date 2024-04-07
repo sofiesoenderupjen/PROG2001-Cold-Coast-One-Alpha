@@ -46,7 +46,7 @@ public class MariannesPlayerController : MonoBehaviour
 
     void SetCountText()
     {
-        countText.text = "Count: " + count.ToString();
+        countText.text = "Count: " + count.ToString() + "/10";
         if(count>=10)
         {
             winTextObject.SetActive(true);
