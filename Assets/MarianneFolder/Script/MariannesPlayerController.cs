@@ -67,18 +67,11 @@ public class MariannesPlayerController : MonoBehaviour
     {
         if(other.gameObject.CompareTag("MariannesPickUp"))
         {
+            audioPlayer.Play();
             other.gameObject.SetActive(false);
             count = count + 1;
 
             SetCountText();
-        }
-    }
-
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject.tag == "MariannesPickUp")
-        {
-            audioPlayer.Play();
         }
     }
 }
