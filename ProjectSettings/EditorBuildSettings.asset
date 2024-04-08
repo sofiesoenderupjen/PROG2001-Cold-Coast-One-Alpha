@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/MenuFolder/Scenes/AllScenesMenu.unity
     guid: 84403a7e316a13b46ae46acb4a5606d0
   - enabled: 1
-    path: Assets/SofieFolder/Scenes/Sofies_Scene.unity
-    guid: e78a15fed6187a14093d4242edfac468
+    path: Assets/SofieFolder/Scenes/Farm_Scene.unity
+    guid: 31c94c61b0d610b4881ee811a81d564c
   - enabled: 1
     path: Assets/MarianneFolder/Scenes/Mariannes Scene.unity
     guid: d667d983743cbf94b8db75c8770e84f6

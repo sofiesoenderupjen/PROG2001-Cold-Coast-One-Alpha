@@ -83,7 +83,7 @@ public class SofiesPlayerController : MonoBehaviour
     void SetCountText()
     {
         // Update the count text with the current count.
-        countText.text = "Apple Count: " + count.ToString();
+        countText.text = "Count: " + count.ToString();
 
         // Check if the count has reached or exceeded the win condition.
         if (count >= 12)
