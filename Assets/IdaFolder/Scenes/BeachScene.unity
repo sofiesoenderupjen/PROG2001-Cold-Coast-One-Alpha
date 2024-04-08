@@ -1109,8 +1109,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1475,7 +1475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countText: {fileID: 562930073}
   winTextObject: {fileID: 744260955}
-  speed: 20
+  speed: 50
 --- !u!82 &440410090
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4227,19 +4227,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 462998, guid: cb34250ae9427604f9aeac015096d161, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.043405466
       objectReference: {fileID: 0}
     - target: {fileID: 462998, guid: cb34250ae9427604f9aeac015096d161, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 462998, guid: cb34250ae9427604f9aeac015096d161, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.99905753
       objectReference: {fileID: 0}
     - target: {fileID: 462998, guid: cb34250ae9427604f9aeac015096d161, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 462998, guid: cb34250ae9427604f9aeac015096d161, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4247,7 +4247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 462998, guid: cb34250ae9427604f9aeac015096d161, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 175.025
       objectReference: {fileID: 0}
     - target: {fileID: 462998, guid: cb34250ae9427604f9aeac015096d161, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -7129,8 +7129,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

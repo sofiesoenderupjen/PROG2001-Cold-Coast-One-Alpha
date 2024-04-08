@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PickUp
   - MariannesPickUp
+  - SofiesPickUp
   layers:
   - Default
   - TransparentFX
