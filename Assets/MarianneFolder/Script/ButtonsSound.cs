@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayBackground : MonoBehaviour
+public class ButtonsSound : MonoBehaviour
 {
     public AudioSource soundPlayer;
     // Start is called before the first frame update
