@@ -14,10 +14,16 @@ public class AnnestasiaPlayerController : MonoBehaviour
     public TextMeshProUGUI countText;
     private int count;
     public GameObject winTextObject;
+    public AudioSource backGroundAudioSource;
+    public AudioSource pickUpAudioSource;
+    public AudioSource onClickAudioSource;
 
     // Start is called before the first frame update
     void Start()
     {
+     
+
+        backGroundAudioSource.Play();
         rb = GetComponent<Rigidbody>();
         count = 0;
 
@@ -56,10 +62,14 @@ public class AnnestasiaPlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PickUp"))
         {
+
+            pickUpAudioSource.Play();
             other.gameObject.SetActive(false);
             count = count + 1;
 
             SetCountText();
         }
     }
+
+  
 }
