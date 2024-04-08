@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/IdaFolder/Scenes/BeachScene.unity
     guid: ac17582456b75574e8948c39248dedf1
+  - enabled: 1
+    path: Assets/MrishaFolder/Scene/Mrisha Main scene.unity
+    guid: 85b39fcdbe138224985586bc1c631d12
   m_configObjects: {}
