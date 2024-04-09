@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/AnneSofieFolder/Scene/AnneSofieScene.unity
     guid: f65829e058f9048b38654c985f582979
+  - enabled: 1
+    path: Assets/MenuFolder/Scenes/Credits.unity
+    guid: 127d2de6812ca4c5dbb5e2f13ed3a7b3
   m_configObjects: {}
