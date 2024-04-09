@@ -34,4 +34,12 @@ public class PlayerControlMU : MonoBehaviour
         mX = vector2.x;
         mY = vector2.y;
     }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag ("Pickup"))
+        {
+            other.gameObject.SetActive(false);
+        }
+    }
 }
