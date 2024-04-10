@@ -5,6 +5,9 @@ using UnityEngine.InputSystem;
 
 public class AnnestasiaRotator : MonoBehaviour
 {
+    public float y;
+    public float speed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +18,7 @@ public class AnnestasiaRotator : MonoBehaviour
     void Update()
     {
         transform.Rotate(new Vector3(0, 70, 0) * Time.deltaTime);
+
 
     }
 }
