@@ -16,6 +16,7 @@ public class IdasPlayerController : MonoBehaviour
     private int count;
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
+    public AudioSource collectsound;
 
     // Speed at which the player moves.
     public float speed = 10;
@@ -64,6 +65,7 @@ public class IdasPlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PickUp"))
         {
+            collectsound.Play();
             other.gameObject.SetActive(false);
             count = count + 1;
             SetCountText();
