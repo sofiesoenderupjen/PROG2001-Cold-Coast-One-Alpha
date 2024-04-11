@@ -26,6 +26,8 @@ public class SofiesPlayerController : MonoBehaviour
     // UI object to display winning text.
     public GameObject winTextObject;
 
+    public AudioSource audioPlayer;
+
     // Start is called before the first frame update.
     void Start()
     {
@@ -68,6 +70,7 @@ public class SofiesPlayerController : MonoBehaviour
         // Check if the object the player collided with has the "PickUp" tag.
         if (other.gameObject.CompareTag("SofiesPickUp"))
         { 
+            audioPlayer.Play();
             // Deactivate the collided object (making it disappear).
             other.gameObject.SetActive(false);
 

@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class SofiesPlayerStateController : MonoBehaviour
 {
+    Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        bool forward = Input.GetKey("w");
+
+        if (forward)
+        {
+            animator.SetBool("walking", true);
+        }
+
+       if(!forward)
+        {
+            animator.SetBool("walking", false);
+
+        }
     }
 }
