@@ -3050,7 +3050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSound: {fileID: 456545473}
   hoverSound: {fileID: 0}
-  clickSound: {fileID: 8300000, guid: e45d5d61ea0730149b44668255559969, type: 3}
+  clickSound: {fileID: 8300000, guid: 7f2f51257878b4ee38c63d0ea95d43de, type: 3}
 --- !u!82 &414047814
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3061,7 +3061,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e45d5d61ea0730149b44668255559969, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7f2f51257878b4ee38c63d0ea95d43de, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3660,7 +3660,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e45d5d61ea0730149b44668255559969, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7f2f51257878b4ee38c63d0ea95d43de, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
