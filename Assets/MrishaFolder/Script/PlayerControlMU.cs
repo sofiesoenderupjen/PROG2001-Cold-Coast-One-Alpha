@@ -45,7 +45,7 @@ public class PlayerControlMU : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag ("Pickup"))
+        if(other.gameObject.CompareTag ("MrishaPickup"))
         {
             other.gameObject.SetActive(false);
             Count += 1;
@@ -57,14 +57,15 @@ public class PlayerControlMU : MonoBehaviour
     public void SetCountText()
     {
         countText.text = "Count: " + Count.ToString();
-        //ask Adam 
+        //ask Adam
+        CheckScore();
     }
 
     public void CheckScore()
     {
         //for 6 coins = 6 
 
-        if (Count == 6)
+        if (Count >= 6)
         {
             winPanel.SetActive(true);
         }
