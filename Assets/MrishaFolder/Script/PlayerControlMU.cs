@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class PlayerControlMU : MonoBehaviour
 {
@@ -11,10 +12,17 @@ public class PlayerControlMU : MonoBehaviour
     private float mY;
 
     public float speed = 0;
+
+    public TextMeshProUGUI countText;
+
+    private float Count;
+
+    public TextMeshProUGUI winTextObject;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        Count = 0;
     }
 
     // Update is called once per frame
@@ -40,6 +48,14 @@ public class PlayerControlMU : MonoBehaviour
         if(other.gameObject.CompareTag ("Pickup"))
         {
             other.gameObject.SetActive(false);
+            Count += 1;
+
+            SetCountText();
         }
+    }
+
+    public void SetCountText()
+    {
+        countText.text = "Count: " + countText.ToString();
     }
 }
