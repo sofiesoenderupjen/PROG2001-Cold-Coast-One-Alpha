@@ -14,6 +14,7 @@ public class PlayerControlMU : MonoBehaviour
     public float speed = 0;
 
     public TextMeshProUGUI countText;
+    //public AudioSource coinsoundAudioSource;
 
     private float Count;
 
@@ -47,6 +48,7 @@ public class PlayerControlMU : MonoBehaviour
     {
         if(other.gameObject.CompareTag ("MrishaPickup"))
         {
+            //coinsoundAudioSource.Play();
             other.gameObject.SetActive(false);
             Count += 1;
 
